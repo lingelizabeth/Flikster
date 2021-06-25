@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <ImageView
@@ -25,9 +25,9 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="66dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="@font/opensans_regular"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        android:fontFamily="@font/opensans_regular"
         tools:text="A Quiet Place Part II" />
 
     <TextView
@@ -37,10 +37,47 @@
         android:layout_below="@+id/tvTitle"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="7dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textColor="@color/light_gray"
         android:fontFamily="@font/opensans_light"
+        android:textColor="@color/light_gray"
         tools:text="Following the events at home, the Abbott family now face the terrors of the outside world. Forced to venture into the unknown, they realize that the creatures that hunt by sound are not the only threats that lurk beyond the sand path." />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="@font/opensans_light"
+        android:textColor="@color/light_gray"
+        tools:text="2019" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/tvYear"
+        android:fontFamily="@font/opensans_light"
+        android:textColor="@color/light_gray"
+        android:text="|" />
+
+    <TextView
+        android:id="@+id/tvGenres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:fontFamily="@font/opensans_light"
+        android:textColor="@color/light_gray"
+        tools:text="Comedy, Family" />
+
 </RelativeLayout>
